@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/*!
+ * font-typeA
+ * 
+ * Fanwood Text
+ * http://www.google.com/webfonts/specimen/Fanwood+Text
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+/*
+ * structure
+ */
+
+html, body {
+}
+
+body {
+}
+
+#document {
+}
+
+
+/*
+ * base-header
+ */
+.base-header {
+}
+.base-siteTitle {
+	font-family: 'Fanwood Text', serif;
+}
+.base-description {
+}
+
+
+
+/*
+ * base-globalnavi
+ *
+ */
+.base-globalnavi {
+}
+
+	.base-globalnavi-inner {
+	}
+	
+		.global-menu {
+		}
+		
+			.global-menu li {
+				font-family: 'Fanwood Text', serif;
+			}
+
+
+
+/*
+ * base-footer-siteTitle
+ *
+ */
+.base-footer-siteTitle {
+	font-family: 'Fanwood Text', serif;
+}
+
+
+
+/*
+ * base-navigation
+ *
+ */
+.base-navigation {
+}
+
+	.base-navigation .global-menu {
+	}
+	
+		.base-navigation .global-menu li {
+			font-family: 'Fanwood Text', serif;
+		}
+
+
+/*
+ * base-accessMap
+ *
+ */
+.base-accessMap {
+}
+
+	.base-accessMap-h {
+		font-family: 'Fanwood Text', serif;
+	}
+	
+	.base-accessMap-map {
+	}
+
+
+/*
+ * widget
+ *
+ */
+.widget {
+}
+
+.widget h2 {
+	font-family: 'Fanwood Text', serif;
+}
+
+
+/*
+ * BlogComment
+ *
+ */
+#BlogComment {
+}
+
+#BlogComment .contents-head {
+	font-family: 'Fanwood Text', serif;
+}
+
+
+
+/* mod-pageTitle */
+.mod-pageTitle {
+	font-family: 'Fanwood Text', serif,"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+
+
+/*
+ * mod-more
+ *
+ */
+.mod-more {
+	font-family: 'Fanwood Text', serif;
+}
+
+	.mod-more a {
+	}
+
+
+
+/* 
+ * mod-menu-list
+ * 
+ */
+table.mod-menu-list {
+}
+
+table.mod-menu-list tr th,
+table.mod-menu-list tr td {
+}
+
+table.mod-menu-list tr th,
+table.mod-menu-list tr td {
+}
+
+	table.mod-menu-list tr th {
+	}
+	table.mod-menu-list tr td {
+		font-family: 'Fanwood Text', serif;
+		}
+
+
+
+
+
+/*
+ * Release Notes:
+ * 
+ * 2012-10-31 -  @komomoaichi @mori_ko @hiromasa
+ *              初回作成
+ */

@@ -1,0 +1,1 @@
+<?php loadPluginConfig('Cafedebut.cafedebut'); ?>

@@ -1,0 +1,25 @@
+<?php
+class CafedebutConfigsSchema extends CakeSchema {
+	var $name = 'CafedebutConfigs';
+	
+	var $file = 'cafedebut_configs.php';
+	
+	var $connection = 'plugin';
+	
+	function before($event = array()) {
+		return true;
+	}
+	
+	function after($event = array()) {
+	}
+	
+	var $cafedebut_configs = array(
+		'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
+		'name' => array('type' => 'string', 'null' => true, 'default' => NULL),
+		'value' => array('type' => 'text', 'null' => true, 'default' => NULL),
+		'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
+		'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
+		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
+	);
+}
+?>

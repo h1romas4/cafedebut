@@ -1,0 +1,9 @@
+Cafe Debut : baserCMS Theme
+Copyright 2012, こもりこましゃ(コモモ・モリコ・ひろましゃ). <http://komorikomasha.info/>
+
+About License
+Licensed under the MIT License
+http://opensource.org/licenses/mit-license.php
+
+使用しているウェブフォント(アイコンを含む) 
+SIL Open Font License

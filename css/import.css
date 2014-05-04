@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*!
+ * Import CSS
+ *
+ * サイト共通で使うCSS全てを読み込む。
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+@import "normalize.css";
+@import "base.css";
+@import "module.css";
+@import "script.css";
+@import "font.css";
+@import "layout.css";
+
+@import url(http://fonts.googleapis.com/css?family=Niconne);
+
+
+
+
+/*
+ * WEBフォント設定 オプション
+ * 下記のcssファイルを読み込みさせるだけで、
+ * 見出しのフォントを切り替えられます。
+ * 
+ * 
+ */
+
+/* Fanwood Text
+ * http://www.google.com/webfonts/specimen/Fanwood+Text
+ *
+@import "font_typeA.css";
+@import url(http://fonts.googleapis.com/css?family=Fanwood+Text);
+ *
+ */
+
+
+/* Allura
+ * http://www.google.com/webfonts/specimen/Allura
+ * 
+@import "font_typeB.css";
+@import url(http://fonts.googleapis.com/css?family=Allura);
+ *
+ */
+
+/* Rye
+ * http://www.google.com/webfonts/specimen/Rye
+ * 
+@import "font_typeC.css";
+@import url(http://fonts.googleapis.com/css?family=Rye);
+ *
+ */

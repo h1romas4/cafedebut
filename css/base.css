@@ -1,0 +1,903 @@
+@charset "utf-8";
+
+/*!
+ * base.css
+ * 
+ */
+
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+
+
+/* ==========================================================================
+
+## WebIconFonts-3.0
+   http://webiconfonts.appspot.com/
+
+   ========================================================================== */
+
+@font-face {
+	font-family: 'WebIconFonts';
+	src: url('../font/webiconfonts.eot');
+	src: url('../font/WebIconFonts.eot?#iefix') format('eot'),
+	     url('../font/WebIconFonts.woff') format('woff'),
+	     url('../font/WebIconFonts.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* ==========================================================================
+
+## Entypo
+
+   Copyright (C) 2012 by Daniel Bruce
+
+   Author:    Daniel Buce
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://www.entypo.com
+
+
+## Web Symbols
+
+   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
+
+   Author:    Just Be Nice studio
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://www.justbenicestudio.com/studio/websymbols/
+
+   ========================================================================== */
+
+@font-face {
+	font-family: 'fontCustom';
+	src: url('../font/fontello.eot');
+	src: url('../font/fontello.eot?#iefix') format('eot'),
+	     url('../font/fontello.woff') format('woff'),
+	     url('../font/fontello.ttf') format('truetype'),
+	     url('../font/fontello.svgfontCustom') format('svg');
+	src: url('../font/fontello.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'fontCustom';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.7;
+  line-height: 1em;
+}
+
+.icon-home:before       { content: '\74'; } /* 't' */
+.icon-up-dir:before     { content: '\75'; } /* 'u' */
+.icon-right-dir:before  { content: '\72'; } /* 'r' */
+.icon-down-dir:before   { content: '\64'; } /* 'd' */
+.icon-left-dir:before   { content: '\6c'; } /* 'l' */
+.icon-star:before       { content: '\73'; } /* 's' */
+.icon-heart:before      { content: '\68'; } /* 'h' */
+.icon-attention:before  { content: '\65'; } /* 'e' */
+.icon-ok:before         { content: '\6b'; } /* 'k' */
+.icon-tag:before        { content: '\67'; } /* 'g' */
+.icon-comment:before    { content: '\63'; } /* 'c' */
+.icon-location:before   { content: '\6d'; } /* 'm' */
+.icon-rss:before        { content: '\36'; } /* '6' */
+.icon-down-open:before  { content: '\31'; } /* '1' */
+.icon-left-open:before  { content: '\32'; } /* '2' */
+.icon-right-open:before { content: '\33'; } /* '3' */
+.icon-up-open:before    { content: '\34'; } /* '4' */
+.icon-dot-3:before      { content: '\7d'; } /* '}' */
+.icon-leaf:before       { content: '\40'; } /* '@' */
+.icon-folder:before     { content: '\66'; } /* 'f' */
+.icon-calendar:before   { content: '\35'; } /* '5' */
+.icon-camera:before     { content: '\37'; } /* '7' */
+.icon-link:before       { content: '\77'; } /* 'w' */
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+/* ==========================================================================
+   base css
+   ========================================================================== */
+
+/**
+ * structure
+ *
+ * 
+ */
+
+html, body {
+	color: #000000;
+	background: #37A6AE;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 960px;
+}
+
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:link    {}
+a:visited {}
+a:hover   { text-decoration: none;}
+a:active  {}
+
+
+#document {
+	min-width: 960px;
+	background: url(../img/base/bg.png) repeat;
+	border-top: 3px solid #37A6AE;
+}
+
+#header {
+	background: #FFFFFF;
+	background: rgba(255,255,255,0.7);
+	overflow: hidden;
+}
+
+#article {
+}
+
+#footer {
+	padding: 30px 0 50px;
+	background: #37A6AE;
+}
+
+
+
+/*
+ * base-header
+ *
+ */
+.base-header {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+
+/*
+ * base-header-sns
+ *
+ */
+.base-header .base-sns-list {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0 0 0 -7px;
+	padding: 0;
+}
+.base-header .base-sns-list:after {
+	content: "."; display: block; clear: both; height: 0px; visibility: hidden;
+}
+
+	.base-header .base-sns-item {
+		position: relative;
+		float: left;
+		display: inline;
+		margin: 0 0 0 7px;
+		padding: 0 0 18px;
+		width: 28px;
+		font-family: WebIconFonts;
+		font-size: 16px;
+		line-height: 1.25;
+		text-align: center;
+		overflow: hidden;
+	}
+	
+		.base-header .base-sns-item a {
+			position: relative;
+			display: block;
+			margin: 0;
+			padding: 5px 0 0;
+			width: 28px;
+			background: #49A6AB;
+			color: #FFFFFF;
+			text-decoration: none;
+			z-index: 10;
+		}
+		
+		.base-header .base-sns-item:before {
+			content:'';
+			display: block;
+			position:absolute;
+			left: 50%;
+			bottom: 0;
+			margin: 0 0 0 -14px;
+			padding: 0;
+			border-top:    14px solid #49A6AB;
+			border-right:  14px solid #49A6AB;
+			border-bottom: 14px solid transparent;
+			border-left:   14px solid #49A6AB;
+		}
+
+
+
+/*
+ * base-logo
+ *
+ */
+.base-logo {
+	position: relative;
+	margin: 24px 0 0;
+	padding: 10px 0;
+	text-align: center;
+}
+	.base-logo img {
+		position: relative;
+		z-index: 10;
+	}
+
+	.base-logo:after {
+		content:'';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -20px 0 0 -20px;
+		width: 40px;
+		height: 40px;
+		background: #37A6AE;
+		-webkit-border-radius: 20px;
+		   -moz-border-radius: 20px;
+		    -ms-border-radius: 20px;
+		     -o-border-radius: 20px;
+		        border-radius: 20px;
+		vertical-align: middle;
+	}
+
+/* base-logo.base-logo-image */
+.base-logo.base-logo-image {
+	padding: 0;
+}
+	.base-logo.base-logo-image:after {
+		display: none;
+	}
+
+
+
+/*
+ * base-siteTitle
+ *
+ */
+.base-siteTitle {
+	margin: 0;
+	color: #48A6AB;
+	text-align: center;
+}
+	.base-siteTitle a {
+		text-decoration: none;
+	}
+
+
+
+/*
+ * base-description
+ *
+ */
+.base-description {
+	display: table;
+	position: relative;
+	margin: 10px auto 18px;
+	padding: 0 27px;
+	color: #48A6AB;
+	font-size: 11px;
+	line-height: 1.364;
+	text-align: center;
+}
+	.base-description:before {
+		content:'';
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 24px;
+		margin: -1px 5px 0 0;
+		border-top: 1px solid #48A6AB;
+		color: #48A6AB;
+	}
+	.base-description:after {
+		content:'';
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 24px;
+		margin: -1px 0 0 5px;
+		border-top: 1px solid #48A6AB;
+		color: #48A6AB;
+	}
+
+
+
+/*
+ * base-globalnavi
+ *
+ */
+.base-globalnavi {
+	border: solid #4CA6AA;
+	border-width: 1px 0;
+	overflow: hidden;
+}
+
+	.base-globalnavi-inner {
+		width: 960px;
+		margin: 0 auto;
+	}
+	
+		.global-menu {
+			margin: 0 0 0 -20px;
+			padding: 0;
+			text-align: center;
+		}
+		
+			.global-menu li {
+				display: inline-block;
+				list-style: none;
+				margin: 0 0 0 20px;
+				color: #000000;
+				font-size: 20px;
+				line-height: 1.2;
+				white-space: nowrap;
+				/display: inline;
+				/zoom: 1;
+			}
+			
+				.global-menu li a {
+					display: block;
+					padding: 10px 10px 7px;
+					border-bottom: 3px solid transparent;
+					color: inherit;
+					text-decoration: none;
+				}
+				.global-menu li a:hover {
+					border-bottom: 3px solid #48A6AB;
+				}
+
+
+
+/*
+ * base-article
+ *
+ */
+.base-article {
+	width: 940px;
+	margin: 0 auto 80px;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+
+
+/*
+ * base-footer
+ *
+ */
+.base-footer {
+	width: 960px;
+	margin: 0 auto;
+}
+.base-footer:after {
+	content: "."; display: block; clear: both; height: 0px; visibility: hidden;
+}
+
+	.base-footer-contentsA {
+		float: left;
+		display: inline;
+		width: 530px;
+	}
+	
+	.base-footer-contentsB {
+		float: right;
+		display: inline;
+		width: 400px;
+	}
+
+
+
+/*
+ * base-footer-siteTitle
+ *
+ */
+.base-footer-siteTitle {
+	margin: 0 0 15px;
+	color: #FFFFFF;
+	font-size: 36px;
+	line-height: 1.23;
+}
+
+
+
+/*
+ * base-information
+ *
+ */
+.base-information {
+	margin: 0 0 5px;
+	padding: 12px 22px;
+	border: 1px dashed #FFFFFF;
+}
+
+	.base-information-table {
+		width: 100%;
+	}
+		.base-information-tr {
+		}
+		
+		.base-information-th,
+		.base-information-td {
+			padding: 4px 0;
+			color: #FFFFFF;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 1.5;
+			text-align: left;
+			vertical-align: top;
+		}
+		
+		.base-information-th {
+			white-space: nowrap;
+			padding-right: 33px;
+		}
+		.base-information-td {
+			width: 100%;
+		}
+
+
+
+/*
+ * base-navigation
+ *
+ */
+.base-navigation {
+	margin: 0 0 10px;
+}
+
+	.base-navigation .global-menu {
+		margin: 0 0 0 -1em;
+		padding: 0;
+		zoom: 1;
+	}
+	.base-navigation .global-menu:after {
+		content: "."; display: block; clear: both; height: 0px; visibility: hidden;
+	}
+	
+		.base-navigation .global-menu li {
+			float: left;
+			display: inline;
+			margin: 0 0 0 1em;
+			font-size: 16px;
+			line-height: 1.25;
+			color: #FFFFFF;
+		}
+		
+			.base-navigation .global-menu li a {
+				display: block;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+			.base-navigation .global-menu li a:hover {
+				text-decoration: underline;
+			}
+
+
+
+/*
+ * base-footer-sns
+ *
+ */
+.base-footer .base-sns-list {
+	margin: 0 0 10px -7px;
+	padding: 0;
+	zoom: 1;
+}
+.base-footer .base-sns-list:after {
+	content: "."; display: block; clear: both; height: 0px; visibility: hidden;
+}
+
+	.base-footer .base-sns-item {
+		position: relative;
+		float: left;
+		display: inline;
+		width: 28px;
+		height: 28px;
+		margin: 0 0 0 7px;
+		background: #FFFFFF;
+		-webkit-border-radius: 14px;
+		   -moz-border-radius: 14px;
+		    -ms-border-radius: 14px;
+		     -o-border-radius: 14px;
+		        border-radius: 14px;
+		font-family: WebIconFonts;
+		font-size: 16px;
+		line-height: 1.75;
+		text-align: center;
+	}
+	
+		.base-footer .base-sns-item a {
+			display: block;
+			width: 28px;
+			color: #37A6AE;
+			text-decoration: none;
+			zoom: 1;
+		}
+		.base-footer .base-sns-item a:hover {
+			filter: alpha(opacity=70);
+			opacity: 0.7;
+		}
+
+
+
+/*
+ * base-accessMap
+ *
+ */
+.base-accessMap {
+	margin: 0 0 10px;
+}
+
+	.base-accessMap-h {
+		margin: 0 0 0 7px;
+		color: #FFFFFF;
+		font-size: 24px;
+		line-height: 1.25;
+	}
+	
+	.base-accessMap-map {
+	}
+
+
+
+/*
+ * base-copyright
+ *
+ */
+.base-copyright {
+	margin: 25px 0 0;
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+
+
+/*
+ * layoutA
+ *
+ */
+.base-layoutA {
+	position: relative;
+	margin: 0 0 25px;
+	zoom: 1;
+}
+.base-layoutA:after {
+	content: "."; display: block; clear: both; height: 0px; visibility: hidden;
+}
+
+	.base-layoutA-main {
+		position: relative;
+		top: 25px;
+		float: left;
+		display: inline;
+		width: 660px;
+		margin: -25px 0 0;
+	}
+	
+	.base-layoutA-sub {
+		position: relative;
+		top: 25px;
+		float: right;
+		display: inline;
+		width: 220px;
+		margin: -25px 0 0;
+	}
+	#Default .base-layoutA-main,
+	#Contact .base-layoutA-main,
+	#Home .base-layoutA-main {
+		width:auto;
+		float:none;
+	}
+	#Default .base-layoutA-sub,
+	#Contact .base-layoutA-sub {
+		display:none;
+	}
+
+
+
+
+
+/*
+ * Release Notes:
+ * 
+ * 2012-10-31 -  @komomoaichi @mori_ko @hiromasa
+ *              初回作成
+ */
