@@ -2,6 +2,8 @@ Cafe Debut
 =========
 Cafe Theme for baserCMS
 
+<img src="http://another.maple4ever.net/wp-content/uploads/2014/05/cafedebut.png" alt="Screenshot"/>
+
 Demo
 -------
 [Cafe Debut](http://cafedebut.cat-speak.net/)
